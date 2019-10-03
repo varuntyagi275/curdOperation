@@ -1,0 +1,26 @@
+<div class="wrapper">
+  <br>
+  <br>
+  <div class="jumbotron">
+    This is a sample of Lazy-loading Modules and curd operation using local storage.
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+
+    <div class="row">
+      <div class="col-lg-4"><button class="btn btn-primary" [routerLink]="['/addEmployee']"
+          routerLinkActive="router-link-active">Add Employee</button></div>
+      <div class="col-lg-4"><button class="btn btn-danger" [routerLink]="['/listEmployee']"
+          routerLinkActive="router-link-active">List Employee</button></div>
+  
+    </div>
+
+  </div>
+  <br>
+  <router-outlet></router-outlet>
+  <br>
+  <br>
+  
+</div>

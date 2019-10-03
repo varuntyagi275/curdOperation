@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header bg-dark">
+            <h2 class="text-primary ">Add Employee</h2>
+        </div>
+        <div class="card-body">
+            <form [formGroup]="myForm" (ngSubmit)=submit()>
+                <input type="number" class="form-control " placeholder="Id" formControlName="id">
+                <input type="text" class="form-control mt-3" placeholder="Name" formControlName="name">
+                <input type="text" class="form-control mt-3" placeholder="Designation" formControlName="designation">
+                <input type="text" class="form-control mt-3" placeholder="City" formControlName="city">
+                <input type="number" class="form-control mt-3" placeholder="Salary" formControlName="salary">
+                <button class="btn btn-primary btn-lg mt-4 mx-auto" type="submit" >{{submitB}}</button>
+            </form>
+        </div>
+    </div>
+</div>
